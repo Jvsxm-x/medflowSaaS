@@ -1,0 +1,18 @@
+
+POST /api/auth/login/ 
+# Requirement: Return User object with 'role' in response (like prompt 1), or ensure /auth/profile/ returns 'role'.
+
+GET /api/doctor/patients/
+# Description: Returns a list of patients assigned to the authenticated doctor (or all patients if open system).
+# Response: [{ "id": 1, "first_name": "John", "last_name": "Doe", "date_of_birth": "..." }, ...]
+
+GET /api/admin/users/
+# Description: Returns list of all users for admin management.
+# Response: [{ "id": 1, "username": "...", "role": "doctor", "is_active": true }, ...]
+
+PATCH /api/admin/users/{id}/
+# Description: Activate/Deactivate user or change role.
+
+GET /api/admin/stats/
+# Description: System wide statistics.
+# Response: { "total_patients": 100, "total_doctors": 10, "total_appointments": 500 }
