@@ -1,0 +1,56 @@
+# Requirements for Testing Project
+# Install with: pip install -r requirements-test.txt
+
+# Test Framework
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-html==4.1.1
+pytest-xdist==3.5.0
+pytest-timeout==2.2.0
+pytest-mock==3.12.0
+pytest-asyncio==0.21.1
+
+# Selenium WebDriver
+selenium==4.15.2
+webdriver-manager==4.0.1
+
+# API Testing
+requests==2.31.0
+httpx==0.25.1
+responses==0.24.1
+
+# Test Data & Fixtures
+faker==20.1.0
+factory-boy==3.3.0
+
+# Code Quality
+pylint==3.0.3
+pydocstyle==6.3.0
+black==23.12.1
+flake8==6.1.0
+mypy==1.7.1
+
+# Security Testing
+bandit==1.7.5
+safety==2.3.5
+
+# Performance Testing (for API tests)
+locust==2.17.0
+
+# MongoDB Testing
+mongomock==4.1.2
+pymongo==4.6.1
+
+# Django Testing (for backend)
+django==4.2.13
+djangorestframework==3.14.0
+django-extensions==3.2.3
+
+# Utilities
+python-dotenv==1.0.0
+python-dateutil==2.8.2
+jsonschema==4.20.0
+
+# Reporting
+allure-pytest==2.13.2
+
