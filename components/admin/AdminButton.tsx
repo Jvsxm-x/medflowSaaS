@@ -40,7 +40,8 @@ export const AdminButton: React.FC<AdminButtonProps> = ({
         sizes[size],
         className
       )}
-     
+      disabled={disabled || isLoading}
+      {...props}
     >
       {isLoading && <Loader2 className="w-4 h-4 animate-spin" />}
       {children}

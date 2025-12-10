@@ -70,7 +70,11 @@ export const AdminModal: React.FC<AdminModalProps> = ({
             </button>
           </div>
 
-                </div>
+          {/* Content - Scrollable */}
+          <div className="p-6 max-h-[calc(100vh-12rem)] overflow-y-auto custom-scrollbar">
+            {children}
+          </div>
+        </div>
       </div>
     </div>
   );
