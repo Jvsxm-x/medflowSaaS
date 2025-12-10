@@ -32,7 +32,11 @@ export const ScrollableModal = ({ isOpen, onClose, title, children, footer, widt
         <div className={`max-h-[60vh] overflow-y-auto p-6 ${widthClass}`}>
           {children}
         </div>
-      
+        {footer && (
+          <div className="p-6 border-t border-slate-200 flex justify-end gap-4 bg-slate-50">
+            {footer}
+          </div>
+        )}
       </div>
     </div>
   );

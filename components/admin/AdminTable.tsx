@@ -22,7 +22,10 @@ export const AdminTable = <T extends { _id: string }>({ data, columns, onEdit, o
                 {col.label}
               </th>
             ))}
-            {(onEdit || onDelete) && <th className="px-6 py-4 text-right">Actions</th>}
+         
+
+
+   {(onEdit || onDelete) && <th className="px-6 py-4 text-right">Actions</th>}
           </tr>
         </thead>
         <tbody className="bg-white divide-y divide-slate-200">

@@ -1,3 +1,4 @@
+
 // src/components/admin/ChartWrapper.tsx → Nouveau pour les charts
 import React from 'react';
 import { ResponsiveContainer } from 'recharts';
