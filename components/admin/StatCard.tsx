@@ -50,12 +50,7 @@ export const StatCard: React.FC<StatCardProps> = ({
 
   return (
     <div className={cn(baseStyles, variantStyles[variant])}>
-      <div className="flex justify-between items-start mb-4">
-        <h3 className={cn('text-sm font-medium', titleStyles[variant])}>
-          {title}
-        </h3>
-        <Icon className={cn('w-5 h-5', iconStyles[variant])} />
-      </div>
+    
       
       <div className={cn('text-3xl font-bold', valueStyles[variant])}>
         {value}
